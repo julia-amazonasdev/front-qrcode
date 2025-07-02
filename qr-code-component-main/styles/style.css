@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  background-color: #d5e1ef;
+  background-color: var(--color-background-light);
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -22,34 +24,36 @@ main {
 
 .qr-code-container {
   display: block;
-  padding: 16px;
-  background-color: #fff;
+  padding: clamp(1rem, 1vw, 1.5rem);
+  background-color: var(--color-qr-code-container);
   border-radius: 20px;
-  max-width: 320px;
-  max-height: 499px;
+  max-width: 20rem;
+  max-height: 31.1rem;
   text-align: center;
 }
 
 img {
-  width: 288px;
-  margin-bottom: 24px;
+  width: 18rem;
+  margin-block-end: 1.5rem;
   border-radius: 20px;
 }
 
-h3 {
+h1 {
   font-family: "Outfit", sans-serif;
   font-weight: bold;
-  margin-bottom: 16px;
+  color: var(--color-h1);
   font-size: 22px;
+  margin-block-end: 1rem;
 }
 
 p {
   font-family: "Outfit", sans-serif;
-  margin-bottom: 40px;
+  color: var(--color-p);
   font-size: 15px;
+  margin-block-end: 2.5rem;
 }
 
 .attribution {
   font-size: 12px;
-  padding: 10px;
+  padding: 0.6rem;
 }
